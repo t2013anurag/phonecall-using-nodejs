@@ -1,12 +1,14 @@
 doctype xml
 Response
   Say(voice='alice').
-    Hello Mr. Shitiz Kothi, you scheduled a pickup for your courier tomorrow with courierwala.com. The order ID is 64622.
+  	 Gather action="http://www.example.com/callFinished.php" finishOnKey="*"
+    Hello,  Mr. Shitiz. Kothi, you scheduled a pickup for your courier tomorrow with courierwala.com. The order ID is 64622.
     Would you like to confirm your order?
     Press 1 to confirm.
-    Press 2 to cancel
+    Press 2 to cancel.
 
 
   // To dial another number, you would uncomment the <Dial> below and replace
   // +16519991111 with the number of your sales/support line
    Dial +919989990950
+
